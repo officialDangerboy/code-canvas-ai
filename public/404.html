@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Code Canvas AI</title>
+    <script>
+      // Redirect to index with the path encoded in the query string
+      var path = window.location.pathname.replace('/code-canvas-ai', '');
+      window.location.replace(
+        '/code-canvas-ai/?p=' + encodeURIComponent(path) +
+        window.location.search.slice(1) +
+        window.location.hash
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
